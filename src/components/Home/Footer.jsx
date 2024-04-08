@@ -1,7 +1,11 @@
 import React from 'react'
 import logo from "../../assets/dribbble.svg"
-import ball from "../../assets/pinkBall.png"
-
+import pinkBall from "../../assets/pinkBall.png"
+import ball from "../../assets/ball.png"
+import fb from "../../assets/fb.png"
+import insta from "../../assets/instagram.png"
+import pin from "../../assets/pin.png"
+import twitter from "../../assets/twitter.png"
 
 const Footer = () => {
   return (
@@ -10,6 +14,14 @@ const Footer = () => {
         <div className='flex flex-col gap-3'>
           <img src={logo} alt="" className='w-24' />
           <p className='text-gray-500 text-sm font-medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor mi lobortis.</p>
+          <div className="flex gap-3">
+            <img src={ball} alt="" className='w-5'/>
+            <img src={twitter} alt="" className='w-5' />
+            <img src={fb} alt="" className='w-5' />
+            <img src={insta} alt="" className='w-5' />  
+            <img src={pin} alt="" className='w-5' />
+
+          </div>
         </div>
 
         <div>
@@ -97,7 +109,7 @@ const Footer = () => {
         <p>&copy; 2024 Aakash. All rights Reserved</p>
         <div className='flex gap-2 items-center'>
           <p><span className='font-bold'>234987</span> shots dribbled</p>
-          <img src={ball} alt="" className='w-6' />
+          <img src={pinkBall} alt="" className='w-6' />
         </div>
       </div>
     </div>
