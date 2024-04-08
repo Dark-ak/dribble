@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../../assets/dribbble.svg"
+import ball from "../../assets/pinkBall.png"
 
 
 const Footer = () => {
@@ -92,9 +93,12 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className='py-10 border-t px-5 flex justify-between'>
+      <div className='py-5 border-t px-5 flex justify-between'>
         <p>&copy; 2024 Aakash. All rights Reserved</p>
-        <p><span className='font-bold'>234987</span> shots dribbled</p>
+        <div className='flex gap-2 items-center'>
+          <p><span className='font-bold'>234987</span> shots dribbled</p>
+          <img src={ball} alt="" className='w-6' />
+        </div>
       </div>
     </div>
   )
